@@ -9,7 +9,7 @@ setTimeout(function capitulo2() {
         }
 
         else if(escolha1==2) {
-            while (escolha2 != 1 || escolha2 != 2){
+            while (true){
                 var escolha2 = prompt("Voce está conseguindo vencer a batalha contra Kratos \n Você tem a chance de mata-lo ou aprisiona-lo \n 1 Para Mata-lo ou 2 para Prende-lo")
                  if (escolha2 == 1) {
                  alert("Ao tentar mata-lo, Odin Aparece e mata Você")
