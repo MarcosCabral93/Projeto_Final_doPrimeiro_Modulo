@@ -4,6 +4,7 @@ setTimeout(function capitulo2() {
         if (escolha1 == 1) {
             alert("Kratos te deu uma surra e te jogou no HADES")
             location.assign('gameover.html')
+            break
 
         }
 
@@ -13,10 +14,12 @@ setTimeout(function capitulo2() {
                  if (escolha2 == 1) {
                  alert("Ao tentar mata-lo, Odin Aparece e mata Você")
                     location.assign('gameover.html')
+                    break
                 }
                 else {
                     alert("Voce prendeu Kratos e restabeleu a paz")
                     location.assign('cap3.html')
+                    break
             }
         }
 

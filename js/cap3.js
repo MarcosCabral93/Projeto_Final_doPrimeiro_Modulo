@@ -7,13 +7,16 @@ setTimeout(function cap3() {
                 if (escolha2 == 1) {
                     alert("Karsius matou você e seus amigos")
                     location.assign('gameover.html')
+                    break
                 }
                 else if (escolha2 == 2) {
                     alert("Karsios usou um poder do Tempo, Você voltará para o início do capitulo")
                     location.assign('cap3.html')
+                    break
                 }
                 else {
                     alert("Digite um valor Válido")
+                    
                 }
             }
         }
@@ -23,10 +26,12 @@ setTimeout(function cap3() {
                 if (escolha3 == 1) {
                     alert("Karsios usou um poder do Tempo, Você voltará para o início do capitulo")
                     location.assign('cap3.html')
+                    break
                 }
                 else if (escolha2 == 2) {
                     alert("Voce  salvou seus amigos,venceu Karsius e mostrou seu valor para o conselho. \n Finalmente você alcançará o posto de mago Supremo")
                     document.write('PARABÉNS')
+                    break
                 }
                 else {
                     alert("Digite um valor Válido")

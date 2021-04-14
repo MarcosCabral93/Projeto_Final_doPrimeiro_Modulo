@@ -5,6 +5,7 @@ function iniciar() {
         var personagem = prompt("Escolha Seu Personagem" + "\n" + "Selecione 1 para  escolher Abgail \nSelecione 2 para escolher electra \nSelecione 3  para escolher Zion")
         if (personagem == 1 || personagem == 2 || personagem == 3) {
             location.assign('cap1.html')
+            break
         }
     }
 }

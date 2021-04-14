@@ -7,15 +7,20 @@ setTimeout(function primeiroCapitulo() {
             while (escolha1 != 1 || escolha1 != 2) {//Escolha o ca
                 var escolha1 = prompt( " Você terá que escolher entre\n 1 para seguir pelo caminho da direita e enfrentar um minotauro ou \n 2 seguir pela esquerda e enfrentar o cerberus")
                 if (escolha1 == 1) {//caminho do labirinto
-                    while (escolha2 != 1 || escolha2 != 2) {//Escolha entre lutat ou correr.
+                    while (true) {//Escolha entre lutat ou correr.
                         var escolha2 = prompt(" Você se deparou com o Minotauro. \n 1 para Lutar ou 2 para correr")
                         if (escolha2 == 1) {
                             alert("Você tentou lutar com o Minotauro e perdeu, Tente novamente")
                             location.assign('gameover.html')
+                            break
                         }
-                         else {
+                         else if (escolha2==2){
                             alert("parabens, Você será redirecionado para o capitulo 2")
                             location.assign('cap2.html')
+                            break
+                        }
+                        else{
+                            alert("insira um comando válido")
                         }
                     }
                 }
@@ -25,10 +30,12 @@ setTimeout(function primeiroCapitulo() {
                         if (escolha3 == 1) {
                             alert("Você lutou com o cerberus e morreu esquartejada")
                             location.assign('gameover.html')
+                            break
                         }
                         else {
                             alert("parabens!! Você  passou para o próximo teste")
                             location.assign('cap2.html')
+                            break
                         }
                     }
                 }
@@ -44,10 +51,12 @@ setTimeout(function primeiroCapitulo() {
                 if (escolha4 == 1) {
                     alert("Você Lutou com o Troll e o derrotou \n parabens, voce será redirecionado para o capitulo 2 ")
                     location.assign('cap2.html')
+                    break
                 }
                 else if (escolha4 == 2) {
                     alert("Ao fugir você se machucou, O troll engoliu você")
                     location.assign('gameover.html')
+                    break
                 }
             }
         }
