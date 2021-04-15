@@ -64,5 +64,5 @@ setTimeout(function primeiroCapitulo() {
             alert("Insira um comando válido")
         }
     }
-}, 10000)
+}, 5000)
 primeiroCapitulo();

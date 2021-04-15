@@ -7,6 +7,9 @@ function iniciar() {
             location.assign('cap1.html')
             break
         }
+        else{
+            alert("entre com um comando válido")
+        }
     }
 }
 function reiniciar(){

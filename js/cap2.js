@@ -28,5 +28,5 @@ setTimeout(function capitulo2() {
             alert("comando inválido")
         }
     }
-},10000)
+},5000)
 
