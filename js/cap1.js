@@ -2,7 +2,9 @@
 function primeiroCapitulo() {
 
     while (true) {//Escolhendo caminho
+        
         let caminho = prompt(" Iniciamos a sua Jornada\n 1 para escolher o desafio do labirinto \n 2 para escolher o Tartaro ");
+        
         if (caminho == 1) {
             while (true) {//Escolha o ca
                 let escolha1 = prompt(" Você terá que escolher entre\n 1 para seguir pelo caminho da direita e enfrentar um minotauro ou \n 2 seguir pela esquerda e enfrentar o cerberus")
@@ -12,6 +14,7 @@ function primeiroCapitulo() {
                         if (escolha2 == 1) {
                             alert("Você tentou lutar com o Minotauro e perdeu, Tente novamente")
                             location.assign('gameover.html')
+                           
                             break
                         }
                         else if (escolha2 == 2) {
@@ -25,6 +28,7 @@ function primeiroCapitulo() {
                     }
                     break
                 }
+
                 else {
                     while (true) {
                         let escolha3 = prompt("Escolha 1 para Lutar ou 2 para fugir");
@@ -33,7 +37,7 @@ function primeiroCapitulo() {
                             location.assign('gameover.html')
                             break
                         }
-                        else if (escolha3 == 1) {
+                        else if (escolha3 == 2) {
                             alert("parabens!! Você  passou para o próximo teste")
                             location.assign('cap2.html')
                             break
@@ -48,7 +52,7 @@ function primeiroCapitulo() {
 
 
             }
-
+            break
 
         }
         else if (caminho == 2) {//Caminho do Tartaro
@@ -75,6 +79,7 @@ function primeiroCapitulo() {
         }
     }
 }
+
 document.getElementById('btnCap1').onclick = () => {
     primeiroCapitulo();
   }
