@@ -1,29 +1,38 @@
 
 function iniciar() {
-    
-    while (personagem != 1 || personagem != 2 || personagem != 3) {
-        var personagem = prompt("Escolha Seu Personagem" + "\n" + "Selecione 1 para  escolher Abgail \nSelecione 2 para escolher electra \nSelecione 3  para escolher Zion")
+
+    while (true) {
+        let personagem = prompt("Escolha Seu Personagem" + "\n" + "Selecione 1 para  escolher Abgail \nSelecione 2 para escolher electra \nSelecione 3  para escolher Zion")
         if (personagem == 1) {
             alert("Você iniciará a Jornada de Abgail")
-            location.assign('cap1.html')
+
             break
         }
-        else if(personagem==2){
+        else if (personagem == 2) {
             alert("Você iniciará a Jornada de Electra ")
-            location.assign('cap1.html')
+
             break
         }
-        else if(personagem==3){
+        else if (personagem == 3) {
             alert("Você iniciará a Jornada de Zion")
-            location.assign('cap1.html')
+
             break
         }
-        else{
-        alert("entre com um comando válido")
+        else {
+            alert("entre com um comando válido")
         }
     }
+    location.assign('cap1.html')
 }
-function reiniciar(){
+
+
+
+function reiniciar() {
     return location.assign('index.html')
-    
+
 }
+document.getElementById('btnMain').onclick = () => {
+    iniciar();
+  }
+
+

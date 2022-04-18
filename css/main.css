@@ -2,7 +2,7 @@
 
 main {
     width: 100%;
-    height: 900px;
+    height: 800px;
     background: url(../imgs/fundo1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -25,21 +25,6 @@ main {
 }
 
 .personagens {
-    height: 350px;
-    width: 250px;
-    border: solid 1px rgba(0, 0, 0, 0.815);
-    margin: 0 1%;
-    background-color: rgba(0, 0, 0, 0.397);
-    color: cornsilk;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    border-radius: 10px;
-    box-shadow: 3px 2px rgba(139, 0, 139, 0.774);
-    font-size: 1.2em;
-    text-align: center;
-}
-
-.vilao {
     height: 500px;
     width: 350px;
     border: solid 1px rgba(0, 0, 0, 0.815);
@@ -58,9 +43,10 @@ main {
     font-size: 30px;
     font-weight: bold;
     color: cornsilk;
+    box-shadow: black;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.527);
-    margin-top: 2%;
+    background-color: rgba(0, 0, 0, 0.233);
+    margin-top: 5%;
 }
 
 .personagens img {
@@ -69,17 +55,12 @@ main {
     width: 100%;
 }
 
-.vilao img {
+#personagenscap1 img {
     max-height: 12x;
     height: 85%;
     width: 100%;
 }
 
-.vilao h3 {
-    margin-top: 10px;
-}
-
 .personagens h3 {
     margin-top: 10px;
 }
-
